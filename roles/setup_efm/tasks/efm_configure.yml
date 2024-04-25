@@ -53,6 +53,7 @@
       - {name: pcp.pass.file, value: "{{ pcp_passfile }}"}
       - {name: script.load.balancer.attach, value: "{{ efm_pgpool2_lb_attach }}"}
       - {name: script.load.balancer.detach, value: "{{ efm_pgpool2_lb_detach }}"}
+      - {name: detach.on.agent.failure, value: "{{ detach_on_agent_failure }}"}
   when:
     - efm_pgpool2_integration
 

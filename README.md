@@ -1,9 +1,17 @@
 [![Tests status](https://github.com/Ianvdl/edb-ansible/workflows/edb-ansible%20testing/badge.svg)](https://github.com/Ianvdl/edb-ansible/actions?query=workflow%3Aedb-ansible-testing)
 
-This is an open-source project and is not officially supported by EDB Support.
-This repository is maintained and supported by the EDB GitHub members of this
-repository. Please provide feedback by posting issues and contribute by
-creating pull requests.
+# Maintenance notice
+
+> [!IMPORTANT]
+> > EDB has abandoned the original repo. This fork attempts to maintain the collection independently.
+
+## To-do list
+
+- :white_check_mark: Fix test infrastructure
+- Update supported OSes to RHEL 9 and Ubuntu 24.04
+- Publish this collection to Ansible Galaxy
+
+---
 
 # edb_postgres
 

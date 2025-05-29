@@ -29,7 +29,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   standby1-rocky8:
     privileged: true
@@ -40,7 +40,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   standby2-rocky8:
     privileged: true
@@ -51,7 +51,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   primary1-rocky9:
     privileged: true
@@ -62,7 +62,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   standby1-rocky9:
     privileged: true
@@ -73,7 +73,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   standby2-rocky9:
     privileged: true
@@ -84,7 +84,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   primary1-almalinux8:
     privileged: true
@@ -95,7 +95,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   standby1-almalinux8:
     privileged: true
@@ -106,7 +106,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   standby2-almalinux8:
     privileged: true
@@ -117,7 +117,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   primary1-centos7:
     privileged: true
@@ -128,7 +128,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   standby1-centos7:
     privileged: true
@@ -139,7 +139,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   standby2-centos7:
     privileged: true
@@ -150,7 +150,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   primary1-debian10:
     privileged: true
@@ -161,7 +161,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
     - /run
     - /tmp
@@ -176,7 +176,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
     - /run
     - /tmp
@@ -191,7 +191,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
     - /run
     - /tmp
@@ -206,7 +206,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
     - /run
     - /tmp
@@ -221,7 +221,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
     - /run
     - /tmp
@@ -236,7 +236,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
     - /run
     - /tmp
@@ -251,7 +251,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   standby1-oraclelinux7:
     privileged: true
@@ -262,7 +262,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   standby2-oraclelinux7:
     privileged: true
@@ -273,5 +273,5 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init

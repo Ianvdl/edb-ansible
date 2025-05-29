@@ -29,7 +29,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   primary1-almalinux8:
     privileged: true
@@ -40,5 +40,5 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init

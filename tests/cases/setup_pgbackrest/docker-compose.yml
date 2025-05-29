@@ -30,7 +30,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   standby1-rocky8:
     # Required for running systemd containers via GitHub actions
@@ -42,7 +42,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   pgbackrest1-rocky8:
     # Required for running systemd containers via GitHub actions
@@ -54,7 +54,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   primary1-rocky9:
     privileged: true
@@ -65,7 +65,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   standby1-rocky9:
     privileged: true
@@ -76,7 +76,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   pgbackrest1-rocky9:
     privileged: true
@@ -87,7 +87,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   primary1-almalinux8:
     # Required for running systemd containers via GitHub actions
@@ -99,7 +99,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   standby1-almalinux8:
     # Required for running systemd containers via GitHub actions
@@ -111,7 +111,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   pgbackrest1-almalinux8:
     # Required for running systemd containers via GitHub actions
@@ -123,7 +123,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   primary1-centos7:
     privileged: true
@@ -134,7 +134,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   standby1-centos7:
     privileged: true
@@ -145,7 +145,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   pgbackrest1-centos7:
     privileged: true
@@ -156,7 +156,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
   primary1-debian10:
     privileged: true
@@ -167,7 +167,7 @@ services:
       - SYS_ADMIN
     volumes:
       - .:/workspace
-      - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+      #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
       - /run
       - /tmp
@@ -182,7 +182,7 @@ services:
       - SYS_ADMIN
     volumes:
       - .:/workspace
-      - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+      #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
       - /run
       - /tmp
@@ -196,7 +196,7 @@ services:
       - SYS_ADMIN
     volumes:
       - .:/workspace
-      - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+      #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
       - /run
       - /tmp
@@ -211,7 +211,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
     - /run
     - /tmp
@@ -226,7 +226,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
     - /run
     - /tmp
@@ -241,7 +241,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
     - /run
     - /tmp

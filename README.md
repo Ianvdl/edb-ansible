@@ -9,12 +9,13 @@
 ## To-do list
 
 - :white_check_mark: Fix test infrastructure
-- Update supported OSes to RHEL 9 and Ubuntu 24.04
-- Publish this collection to Ansible Galaxy
+- Update supported OSes to RHEL 9 and Ubuntu 24.04 #9
+- Remove unsupported OS and PostgreSQL versions #10
+- Publish this collection to Ansible Galaxy #11
 
 ---
 
-# edb_postgres
+# Ansible playbooks for deploying and managing PostgreSQL and EDB Advanced Server
 
 This Ansible Galaxy Collection brings reference architecture deployment
 capabilites for PostgreSQL or EnterpriseDB Postgres Advanced Server.
@@ -70,22 +71,11 @@ currently supports the following ansible roles:
 | [manage_dbpatches](roles/manage_dbpatches/README.md)                                     | Manage applying patches on dbservers part of EFM cluster.                                                                                                                                          |
 | [tuning](roles/tuning/README.md)                                                         | Configure system and Postgres instances for optimal performance.                                                                                                                                   |
 
-## Pre-Requisites
-
-For correctly installed and configuration of the cluster following are requirements:
-
-  1. Ansible (on the machine on which playbook will be executed).
-  2. Operating system privileged user (user with sudo privilege) on all the
-     servers/virtual machines.
-  3. Machines for the Postgres or EPAS cluster should have at least 2 CPUs and
-     4 GB of RAM
-  4. The machine utilized for deploying with ansible can be a minimal instance
-
 ## Installation
 
 * To install Ansible: **[Installing Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)**
 
-The `edb_ansible` Ansible collection can be installed in 3 different approaches:
+The `edb_ansible` collection can be installed using three different approaches:
 
 ### Installing the `edb_postgres` Ansible Collection from Ansible Galaxy
 
@@ -218,7 +208,7 @@ all:
           pem_server_private_ip: 10.0.0.4
 ```
 
-Note: don't forget to replace IP addresses.
+Replace the IP addresses above with your own.
 
 ## How to include the roles in your Playbook
 
@@ -238,7 +228,7 @@ playbook:
   pre_tasks:
     - name: Initialize the user defined variables
       set_fact:
-        pg_version: 14
+        pg_version: 16
         pg_type: "EPAS"
         repo_username: "<edb-package-repository-username>"
         repo_password: "<edb-package-repository-password>"
@@ -300,7 +290,7 @@ playbook:
   pre_tasks:
     - name: Initialize the user defined variables
       set_fact:
-        pg_version: 14
+        pg_version: 16
         pg_type: "EPAS"
         repo_username: "<edb-package-repository-username>"
         repo_password: "<edb-package-repository-password>"
@@ -324,17 +314,17 @@ playbook:
 By default, the `setup_repo` role requires to define credentials (variables
 `repo_username` and `repo_password` or `repo_token`) that will be used to configure the access
 to EDB's package repository. Having access to EDB package repository is
-necessary to deploy EDB softwares like EPAS, EFM or PEM.
+necessary to deploy EDB software like EPAS, EFM or PEM.
 
-When deploying softwares coming only from the community repository (PGDG) like
+When deploying software coming only from the community repository (PGDG) like
 PostgreSQL, barman or pgbouncer, it's not needed to configure access to EDB's
 repository. To disable it, the variable `enable_edb_repo` must be set to
 `false`.
 
 ## Default user and passwords
 
-The following will occur should a password not be provided for the following
-accounts:
+If passwords are not provided for the following accounts, they will be
+generated automatically:
 
   * `pg_superuser`
   * `pg_replication_user`
@@ -344,47 +334,45 @@ accounts:
 
 **Note:**
 
-  * The `~/.edb` folder and contained files are secured by assigning the
-    permissions to `user` executing the playbook.
-  * A password of 20 characters will be automatically created under: `~/.edb`
-    folder.
+  * A password of 20 characters for each user will automatically be created
+    under: `~/.edb` folder.
   * The naming convention for the password file is: `<username>_pass`
 
 ## Playbook examples
 
-Examples of utilizing the playbooks for installing: PostgresSQL, EPAS, etc..
-are provided and located within the `playbook-examples` directory.
+Playbook examples are located within the `playbook-examples` directory.
 
 ## SSH port configuration
 
 When using non standard SSH port (different from 22), the port value must be
 set in two places:
+
 - in the inventory file, for each host, with the host var. `ansible_port`
 - in the playbook or variable file with the variable `ssh_port`
 
 ## Playbook execution examples
 
 ```bash
-# To deploy community Postgres version 13
+# To deploy PostgreSQL version 16
 $ ansible-playbook playbook.yml \
   -i inventory.yml \
   -u <ssh-user> \
   --private-key <ssh-private-key> \
-  --extra-vars="pg_version=13 pg_type=PG enable_edb_repo=false"
+  --extra-vars="pg_version=16 pg_type=PG enable_edb_repo=false"
 ```
 ```bash
-# To deploy EPAS version 12 with the user ec2-user
+# To deploy EPAS version 16 with the user ec2-user
 $ ansible-playbook playbook.yml \
   -i inventory.yml \
   -u <ssh-user> \
   --private-key <ssh-private-key> \
-  --extra-vars="pg_version=12 pg_type=EPAS repo_username=<edb-repo-username> repo_password=<edb-repo-password>"
+  --extra-vars="pg_version=16 pg_type=EPAS repo_username=<edb-repo-username> repo_password=<edb-repo-password>"
 # OR
 $ ansible-playbook playbook.yml \
   -i inventory.yml \
   -u <ssh-user> \
   --private-key <ssh-private-key> \
-  --extra-vars="pg_version=12 pg_type=EPAS repo_token=<edb-repo-token>"
+  --extra-vars="pg_version=16 pg_type=EPAS repo_token=<edb-repo-token>"
 
 ```
 

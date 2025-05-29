@@ -419,7 +419,16 @@ $ ansible-playbook playbook.yml \
 
 BSD
 
+## Contributors
+<a href="https://github.com/Ianvdl/edb-ansible/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Ianvdl/edb-ansible" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
+
 ## Author information
+
+These are the original authors of the EDB version.
 
 Authors:
   * Doug Ortiz

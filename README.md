@@ -3,7 +3,8 @@
 # Maintenance notice
 
 > [!IMPORTANT]
-> > EDB has abandoned the original repo. This fork attempts to maintain the collection independently.
+> EDB has abandoned the original repo. This fork attempts to maintain the
+> collection independently. Pull requests are welcome.
 
 ## To-do list
 
@@ -23,7 +24,6 @@ available.**
 
 **The ansible playbook must be executed under an account that has full
 privileges.**
-
 
 `edb-ansible` is a repository used for hosting an Ansible Collection that
 currently supports the following ansible roles:
@@ -89,6 +89,10 @@ The `edb_ansible` Ansible collection can be installed in 3 different approaches:
 
 ### Installing the `edb_postgres` Ansible Collection from Ansible Galaxy
 
+> [!CAUTION]
+> EDB has abandoned the original repo - the version currently in Ansible Galaxy
+> is outdated and broken.
+
 Installing the `edb_postgres` Ansible Collection is done by following the steps
 below:
 
@@ -116,7 +120,7 @@ This method requires to have the `ansible-galaxy` tool installed.
 Downloading the code from the repository can be accomplished by following the
 steps below:
 
-  * Navigate to the repository address: `https://github.com/EnterpriseDB/edb-ansible`
+  * Navigate to the repository address: `https://github.com/Ianvdl/edb-ansible`
   * Click on the green *Code* Button located next to the *About* section
   * Click on the *Download Zip* Link menu option
 
@@ -148,7 +152,7 @@ Downloading the code from the repository can be accomplished by following the
 steps below:
 
 ```bash
-$ git clone git@github.com:EnterpriseDB/edb-ansible.git
+$ git clone git@github.com:Ianvdl/edb-ansible.git
 ```
 
 After the code has been downloaded, the code will be available in your current
@@ -388,30 +392,25 @@ $ ansible-playbook playbook.yml \
 
 ### PostgreSQL
 
-| Distribution                      |               10 |               11 |               12 |               13 |               14 |               15 |
-| --------------------------------- |:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|
-| CentOS 7                          |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-| Red Hat Linux 7                   |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-| Oracle Linux 7                    |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-| RockyLinux 8                      |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-| AlmaLinux 8                       |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-| Red Hat Linux 8                   |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-| Ubuntu 20.04 LTS (Focal) - x86_64 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-| Debian 9 (Stretch) - x86_64       |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-| Debian 10 (Buster) - x86_64       |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+| Distribution                      |               13 |               14 |               15 |
+| --------------------------------- |:----------------:|:----------------:|:----------------:|
+| RockyLinux 8                      |:white_check_mark:|:white_check_mark:|:white_check_mark:|
+| AlmaLinux 8                       |:white_check_mark:|:white_check_mark:|:white_check_mark:|
+| Red Hat Linux 8                   |:white_check_mark:|:white_check_mark:|:white_check_mark:|
+| Ubuntu 20.04 LTS (Focal) - x86_64 |:white_check_mark:|:white_check_mark:|:white_check_mark:|
+| Debian 9 (Stretch) - x86_64       |:white_check_mark:|:white_check_mark:|:white_check_mark:|
+| Debian 10 (Buster) - x86_64       |:white_check_mark:|:white_check_mark:|:white_check_mark:|
+
 ### EnterpriseDB Postgres Advanced Server
 
-| Distribution                      |               10 |               11 |               12 |               13 |               14 |               15 |
-| --------------------------------- |:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|
-| CentOS 7                          |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-| Red Hat Linux 7                   |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-| Oracle Linux 7                    |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-| RockyLinux 8                      |               :x:|               :x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-| AlmaLinux 8                       |               :x:|               :x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-| Red Hat Linux 8                   |               :x:|               :x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-| Ubuntu 20.04 LTS (Focal) - x86_64 |               :x:|               :x:|               :x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-| Debian 9 (Stretch) - x86_64       |               :x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-| Debian 10 (Buster) - x86_64       |               :x:|               :x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+| Distribution                      |               13 |               14 |               15 |
+| --------------------------------- |:----------------:|:----------------:|:----------------:|
+| RockyLinux 8                      |:white_check_mark:|:white_check_mark:|:white_check_mark:|
+| AlmaLinux 8                       |:white_check_mark:|:white_check_mark:|:white_check_mark:|
+| Red Hat Linux 8                   |:white_check_mark:|:white_check_mark:|:white_check_mark:|
+| Ubuntu 20.04 LTS (Focal) - x86_64 |:white_check_mark:|:white_check_mark:|:white_check_mark:|
+| Debian 9 (Stretch) - x86_64       |:white_check_mark:|:white_check_mark:|:white_check_mark:|
+| Debian 10 (Buster) - x86_64       |:white_check_mark:|:white_check_mark:|:white_check_mark:|
 
 - :white_check_mark: - Tested and supported
 - :x: - Not tested and not supported
@@ -431,4 +430,3 @@ Authors:
   * Hannah Stoik
   * Bryan Barajas
 
-Contact: **edb-devops@enterprisedb.com**

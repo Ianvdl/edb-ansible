@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   ansible-tester:
     build:
@@ -30,7 +28,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
     cgroup: host
   primary1-rocky9:
@@ -42,7 +40,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
     cgroup: host
   primary1-rhel8:
@@ -54,7 +52,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
     cgroup: host
   primary1-almalinux8:
@@ -66,7 +64,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
     cgroup: host
   primary1-centos7:
@@ -78,7 +76,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
     cgroup: host
   primary1-centos8:
@@ -90,7 +88,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
     - /run
     - /tmp
@@ -106,7 +104,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
     - /run
     - /tmp
@@ -122,7 +120,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
     - /run
     - /tmp
@@ -138,7 +136,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
     - /run
     - /tmp
@@ -154,7 +152,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
     - /run
     - /tmp
@@ -170,7 +168,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
     - /run
     - /tmp
@@ -186,7 +184,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     tmpfs:
     - /run
     - /tmp
@@ -203,7 +201,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
     cgroup: host
   primary1-oraclelinux8:
@@ -215,7 +213,7 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
     cgroup: host
   primary1-oraclelinux9:
@@ -227,6 +225,6 @@ services:
     - SYS_ADMIN
     volumes:
     - .:/workspace
-    - /sys/fs/cgroup/:/sys/fs/cgroup:ro
+    #- /sys/fs/cgroup/:/sys/fs/cgroup:ro
     command: /usr/sbin/init
     cgroup: host

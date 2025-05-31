@@ -3,7 +3,6 @@
 - name: Install supporting packages for Touchstone (RedHat)
   ansible.builtin.package:
     name:
-      - dejavu-fonts-common
       - fontconfig
       - fuse
       - fuse-libs

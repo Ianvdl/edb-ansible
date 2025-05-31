@@ -150,8 +150,10 @@ supported_os:
   - CentOS8
   - RedHat7
   - RedHat8
+  - RedHat9
   - Ubuntu20
   - Ubuntu22
+  - Ubuntu24
   - Debian9
   - Debian10
   - Rocky8
@@ -169,3 +171,5 @@ supported_pg_version:
   - 13
   - 14
   - 15
+  - 16
+  - 17

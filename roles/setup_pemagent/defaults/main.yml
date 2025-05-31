@@ -55,12 +55,14 @@ supported_os:
   - CentOS8
   - RHEL7
   - RHEL8
+  - RHEL9
   - Rocky8
   - AlmaLinux8
   - OracleLinux7
   - Debian10
   - Ubuntu20
   - Ubuntu22
+  - Ubuntu24
 
 supported_pg_type:
   - EPAS
@@ -73,3 +75,5 @@ supported_pg_version:
   - 13
   - 14
   - 15
+  - 16
+  - 17

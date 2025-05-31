@@ -3,7 +3,6 @@
   ansible.builtin.package:
     name:
       - bc
-      - dejavu-fonts-common
       - fontconfig
       - fuse
       - fuse-libs

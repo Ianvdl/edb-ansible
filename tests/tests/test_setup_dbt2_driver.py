@@ -15,8 +15,7 @@ def test_setup_dbt2_driver_packages():
         'fuse',
         'fuse-libs',
         'sysstat',
-        'fontconfig',
-        'dejavu-fonts-common'
+        'fontconfig'
     ]
 
     for package in packages:

@@ -12,7 +12,6 @@ def test_setup_dbt3_packages():
     host = get_primary()
     packages = [
         'bc',
-        'dejavu-fonts-common',
         'fontconfig',
         'fuse',
         'fuse-libs',

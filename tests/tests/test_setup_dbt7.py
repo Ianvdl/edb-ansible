@@ -13,7 +13,6 @@ def test_setup_dbt7_packages():
     packages = [
         'bc',
         'byacc',
-        'dejavu-fonts-common',
         'flex',
         'fontconfig',
         'fuse',

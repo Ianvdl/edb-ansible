@@ -2,7 +2,7 @@
 # validate dbt2 driver packages installation
 - name: Set dbt2_driver_pkg_list
   ansible.builtin.set_fact:
-    dbt2_driver_pkg_list: ['perf', 'rsync', 'tmux', 'fuse', 'fuse-libs', 'sysstat', 'dejavu-fonts-common', 'fontconfig']
+    dbt2_driver_pkg_list: ['perf', 'rsync', 'tmux', 'fuse', 'fuse-libs', 'sysstat', 'fontconfig']
 
 - name: Gather the package facts
   ansible.builtin.package_facts:

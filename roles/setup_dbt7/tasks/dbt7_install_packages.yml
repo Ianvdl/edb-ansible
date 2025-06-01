@@ -27,7 +27,6 @@
       - byacc
       - flex
       - make
-      - fonts-dejavu
       - fontconfig
       - linux-perf
       - rsync

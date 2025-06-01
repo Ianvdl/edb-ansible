@@ -17,7 +17,6 @@
   ansible.builtin.package:
     name:
       - fontconfig
-      - fonts-dejavu
       - fuse
       - libfuse2
       - linux-perf

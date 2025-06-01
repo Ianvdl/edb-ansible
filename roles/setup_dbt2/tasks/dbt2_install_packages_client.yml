@@ -16,7 +16,6 @@
 - name: Install DBT-2 Client supporting packages
   ansible.builtin.package:
     name:
-      - fonts-dejavu
       - fontconfig
       - linux-perf
       - rsync

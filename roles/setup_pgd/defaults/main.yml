@@ -117,7 +117,9 @@ supported_os:
   - CentOS8
   - RedHat7
   - RedHat8
+  - RedHat9
   - Rocky8
+  - Rocky9
   - AlmaLinux8
   - OracleLinux7
 
@@ -128,6 +130,8 @@ supported_pg_type:
 supported_pg_version:
   - 14
   - 15
+  - 16
+  - 17
 
 supported_pgd_version:
   - 5

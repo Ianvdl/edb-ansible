@@ -4,7 +4,6 @@
     name:
       - bc
       - byacc
-      - dejavu-fonts-common
       - flex
       - fontconfig
       - fuse
@@ -28,7 +27,6 @@
       - byacc
       - flex
       - make
-      - fonts-dejavu
       - fontconfig
       - linux-perf
       - rsync

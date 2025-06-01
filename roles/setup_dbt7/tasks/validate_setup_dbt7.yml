@@ -2,7 +2,7 @@
 # validate dbt7 db packages installation
 - name: Set dbt7_db_pkg_list
   ansible.builtin.set_fact:
-    dbt7_db_pkg_list: ['bc', 'byacc', 'dejavu-fonts-common', 'flex', 'fontconfig', 'fuse', 'fuse-libs', 'gcc', 'make', 'patch', 'perf', 'psmisc', 'sysstat', 'tmux', 'unzip']
+    dbt7_db_pkg_list: ['bc', 'byacc', 'flex', 'fontconfig', 'fuse', 'fuse-libs', 'gcc', 'make', 'patch', 'perf', 'psmisc', 'sysstat', 'tmux', 'unzip']
 
 - name: Gather the package facts
   ansible.builtin.package_facts:

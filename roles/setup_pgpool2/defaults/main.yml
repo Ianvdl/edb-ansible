@@ -69,6 +69,7 @@ supported_os:
   - OracleLinux7
   - Ubuntu20
   - Ubuntu22
+  - Ubuntu24
   - Debian10
 
 supported_pg_version:
@@ -78,6 +79,8 @@ supported_pg_version:
   - 13
   - 14
   - 15
+  - 16
+  - 17
 
 supported_pgpool2_version:
   - 4.3

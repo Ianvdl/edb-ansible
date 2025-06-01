@@ -2,7 +2,7 @@
 # validate dbt3 db packages installation
 - name: Set dbt3_db_pkg_list
   ansible.builtin.set_fact:
-    dbt3_db_pkg_list: [ 'bc', 'dejavu-fonts-common', 'fontconfig', 'fuse', 'fuse-libs', 'gcc', 'make', 'patch', 'perf', 'psmisc', 'sysstat', 'tmux', 'unzip' ]
+    dbt3_db_pkg_list: [ 'bc', 'fontconfig', 'fuse', 'fuse-libs', 'gcc', 'make', 'patch', 'perf', 'psmisc', 'sysstat', 'tmux', 'unzip' ]
 
 - name: Gather the package facts
   ansible.builtin.package_facts:

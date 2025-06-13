@@ -56,7 +56,7 @@ $ git clone git@github.com:<user>/edb-ansible.git
   3. Go to repository folder
   4. Add main repository as an upstream repository:
 ```shell
-$ git remote add upstream https://github.com/EnterpriseDB/edb-ansible.git
+$ git remote add upstream https://github.com/Ianvdl/edb-ansible.git
 ```
 
 **Contribution submission**

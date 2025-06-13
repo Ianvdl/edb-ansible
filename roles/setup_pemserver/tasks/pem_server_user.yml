@@ -23,4 +23,13 @@
       - name: "{{ pg_pem_admin_user }}"
         pass: "{{ pg_pem_admin_password }}"
         role_attr_flags: superuser,createdb,createrole
-        groups: pg_read_all_settings
+
+- name: Ensure privileges for the pem user
+  ansible.builtin.include_role:
+    name: manage_dbserver
+    tasks_from: manage_privileges
+  vars:
+    pg_grant_roles:
+      - role: pg_read_all_settings
+        user: "{{ pg_pem_admin_user }}"
+        db: postgres

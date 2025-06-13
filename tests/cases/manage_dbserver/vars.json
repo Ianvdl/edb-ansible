@@ -28,7 +28,7 @@
    "users": "all",
    "databases": "postgres",
    "method": "trust",
-   "source": "192.168.56.128",
+   "source": "192.168.56.128/32",
    "state": "present"
   }
  ],

@@ -10,8 +10,8 @@
 
 - :white_check_mark: Fix test infrastructure
 - :white_check_mark: Update supported OSes to RHEL 9 and Ubuntu 24.04 #9
+- 🔜 Publish this collection to Ansible Galaxy #11
 - Remove unsupported OS and PostgreSQL versions #10
-- Publish this collection to Ansible Galaxy #11
 
 ---
 

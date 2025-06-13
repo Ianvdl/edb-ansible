@@ -20,7 +20,6 @@
     expires: "{{ line_item.expires | default(omit) }}"
     priv: "{{ line_item.priv | default(omit) }}"
     role_attr_flags: "{{ line_item.role_attr_flags | default(omit) }}"
-    groups: "{{ line_item.groups | default(omit) }}"
     port: "{{ pg_port }}"
     db: "{{ pg_database }}"
     state: "{{ line_item.state | default('present') }}"

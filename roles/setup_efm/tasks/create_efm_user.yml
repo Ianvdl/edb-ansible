@@ -23,7 +23,6 @@
       - name: "{{ pg_efm_user }}"
         pass: "{{ pg_efm_user_password }}"
         role_attr_flags: replication
-        groups: pg_read_all_settings
 
 - name: Grant execute privileges on system functions to efm user
   ansible.builtin.include_role:
@@ -39,4 +38,7 @@
         type: function
     pg_grant_roles:
       - role: pg_read_all_stats
+        user: "{{ pg_efm_user }}"
+    pg_grant_roles:
+      - role: pg_read_all_settings
         user: "{{ pg_efm_user }}"

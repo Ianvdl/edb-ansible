@@ -23,5 +23,14 @@
     pg_users:
       - name: "{{ pg_pem_agent_user }}"
         pass: "{{ pg_pem_agent_password }}"
-        groups: pg_monitor
   no_log: "{{ disable_logging }}"
+
+- name: Ensure privileges for the pem user
+  ansible.builtin.include_role:
+    name: manage_dbserver
+    tasks_from: manage_privileges
+  vars:
+    pg_grant_roles:
+      - role: pg_monitor
+        user: "{{ pg_pem_agent_user }}"
+        db: postgres

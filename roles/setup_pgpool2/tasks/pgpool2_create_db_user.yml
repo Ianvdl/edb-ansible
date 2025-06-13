@@ -27,7 +27,6 @@
       - name: "{{ pg_pgpool_user }}"
         pass: "{{ pg_pgpool_user_password }}"
         role_attr_flags: replication
-        groups: pg_read_all_settings
   run_once: true
   when: pg_pgpool_user_password|length > 1
 
@@ -45,6 +44,10 @@
         schema: pg_catalog
         objects: pg_current_wal_lsn(),pg_last_wal_replay_lsn(),pg_wal_replay_resume(),pg_wal_replay_pause()
         type: function
+    pg_grant_roles:
+      - role: pg_read_all_settings
+        user: "{{ pg_pgpool_user }}"
+        db: postgres
   run_once: true
   when: pg_pgpool_user_password|length > 1
 

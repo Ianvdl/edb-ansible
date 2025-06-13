@@ -39,6 +39,5 @@
     pg_grant_roles:
       - role: pg_read_all_stats
         user: "{{ pg_efm_user }}"
-    pg_grant_roles:
       - role: pg_read_all_settings
         user: "{{ pg_efm_user }}"

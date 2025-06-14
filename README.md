@@ -2,8 +2,6 @@
 
 ![Header image](https://github.com/Ianvdl/edb-ansible/blob/main/imgs/edb-ansible.png)
 
-https://github.com/Ianvdl/edb-ansible/blob/main/imgs/edb-ansible.png
-
 # Maintenance notice
 
 > [!IMPORTANT]

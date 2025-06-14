@@ -1,5 +1,10 @@
 [![Tests status](https://github.com/Ianvdl/edb-ansible/workflows/edb-ansible%20testing/badge.svg)](https://github.com/Ianvdl/edb-ansible/actions?query=workflow%3Aedb-ansible-testing)
 
+# Ansible playbooks for deploying and managing PostgreSQL and EDB Advanced Server
+
+This Ansible Galaxy Collection brings reference architecture deployment
+capabilites for PostgreSQL or EnterpriseDB Postgres Advanced Server.
+
 ![Header image](https://github.com/Ianvdl/edb-ansible/blob/main/imgs/edb-ansible.png)
 
 # Maintenance notice
@@ -16,11 +21,6 @@
 - Remove unsupported OS and PostgreSQL versions #10
 
 ---
-
-# Ansible playbooks for deploying and managing PostgreSQL and EDB Advanced Server
-
-This Ansible Galaxy Collection brings reference architecture deployment
-capabilites for PostgreSQL or EnterpriseDB Postgres Advanced Server.
 
 **Not all Distribution or versions are supported on all the operating systems
 available.**

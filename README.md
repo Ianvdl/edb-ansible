@@ -1,5 +1,9 @@
 [![Tests status](https://github.com/Ianvdl/edb-ansible/workflows/edb-ansible%20testing/badge.svg)](https://github.com/Ianvdl/edb-ansible/actions?query=workflow%3Aedb-ansible-testing)
 
+![Header image](https://github.com/Ianvdl/edb-ansible/blob/main/imgs/edb-ansible.png)
+
+https://github.com/Ianvdl/edb-ansible/blob/main/imgs/edb-ansible.png
+
 # Maintenance notice
 
 > [!IMPORTANT]

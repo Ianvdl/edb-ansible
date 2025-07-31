@@ -146,6 +146,7 @@ supported_pg_version:
   - 17
 
 supported_efm_version:
+  - "5.0"
   - "4.6"
   - "4.5"
   - "4.4"
